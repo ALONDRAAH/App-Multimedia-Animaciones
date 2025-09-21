@@ -1,50 +1,104 @@
-# Welcome to your Expo app 👋
+# 📱 App Multimedia y Animaciones - React Native con Expo
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este proyecto fue desarrollado como parte de una práctica investigativa en React Native utilizando Expo.  
+Su objetivo es mostrar ejemplos funcionales del **manejo de imágenes y animaciones** en una app móvil.
 
-## Get started
+---
 
-1. Install dependencies
+## 🎯 Objetivos del Proyecto
 
-   ```bash
-   npm install
-   ```
+- Mostrar imágenes locales y remotas.
+- Usar animaciones básicas con la API de `Animated`.
+- Aplicar buenas prácticas en la creación de componentes visuales.
+- Desarrollar una interfaz sencilla e interactiva para demostrar los conceptos aprendidos.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🧱 Tecnologías y Herramientas
 
-In the output, you'll find options to open the app in a
+- [React Native](https://reactnative.dev/)
+- [Expo](https://expo.dev/)
+- API `Animated` de React Native
+- Librerías integradas de React Native y Expo
+- JavaScript / TypeScript
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📸 Componentes Desarrollados
 
-## Get a fresh project
+### 🔹 Imagen Local Animada (`LocalImage.tsx`)
 
-When you're ready, run:
+> Al tocar la imagen local, esta realiza una animación de "pulso" (zoom in/out).
+
+### 🔹 Imagen desde la Web (`RemoteImage.tsx`)
+
+> Imagen cargada directamente desde una URL usando el componente `Image`.
+
+### 🔹 FadeInImage (`FadeInImage.tsx`)
+
+> Imagen que aparece con un efecto suave de desvanecimiento (`fade in`) utilizando `Animated`.
+
+### 🔹 SlideInImage (`SlideInImage.tsx`)
+
+> Imagen que se desliza desde arriba hacia abajo usando una animación de desplazamiento vertical.
+
+### 🔹 Galería Horizontal (`Gallery.tsx`)
+
+> Muestra una lista horizontal con varias imágenes (tanto locales como remotas) usando `FlatList`.
+
+---
+
+## 📂 Estructura del Proyecto
+
+multimedia-animaciones/
+│
+├── assets/images/
+│ └── react-logo.png.svg
+│
+├── components/
+│ ├── FadeInImage.tsx
+│ ├── Gallery.tsx
+│ ├── LocalImage.tsx
+│ ├── RemoteImage.tsx
+│ └── SlideInImage.tsx
+│
+├── app/(tabs)/index.tsx
+├── app.json
+├── package.json
+└── README.md
+
+---
+
+## 🚀 Cómo Ejecutar el Proyecto
+
+1. Clona este repositorio:
 
 ```bash
-npm run reset-project
+git clone https://github.com/ALONDRAAH/App-Multimedia-Animaciones.git
+
+Entra al directorio:
+
+cd App-Multimedia-Animaciones
+
+
+Instala dependencias:
+
+npm install
+
+
+Inicia la app con Expo:
+
+npx expo start
+
+👩‍🏫 Autor y Colaboradores
+
+Grupo 3 – Multimedia y Animaciones
+
+Práctica: React Native con Expo
+
+💻 Alondra A.H.
+
+📝 Licencia
+
+Este proyecto fue desarrollado con fines académicos y educativos.
 ```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
